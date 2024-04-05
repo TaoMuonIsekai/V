@@ -29,6 +29,10 @@ Body = HttpService:JSONEncode({
 ["value"] = game:GetService("Players").LocalPlayer.UserId,
 ["inline"] = true },
 {
+["name"] = "Beli+Level:",
+["value"] = "LV: "..game:GetService("Players").LocalPlayer.Data.Levels.Value.."Beli: "..game:GetService("Players").LocalPlayer.Data.Belis.Value,
+["inline"] = true },
+{
 ["name"] = "Account Age:",
 ["value"] = game:GetService("Players").LocalPlayer.AccountAge,
 ["inline"] = true },
