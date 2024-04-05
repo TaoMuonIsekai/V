@@ -60,7 +60,7 @@ game.StarterGui:SetCore("SendNotification", {
 game:GetService("Players").PlayerAdded:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
-                 Text = "🟢 "..Player.Name.." | "Player.Data.Levels.Value.." Has Join The Game",
+                 Text = "🟢 "..Player.Name.. " Has Join The Game",
                  Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..Player.UserId.."&width=100&height=100&format=png",
                  Duration = 3
              }) 
@@ -68,8 +68,9 @@ end)
 game:GetService("Players").PlayerRemoving:Connect(function(Player)
              game.StarterGui:SetCore("SendNotification", { 
                  Title = "Test Hub!", 
-                 Text = "🔴 "..Player.Name.." | "..Player.Data.Levels.Value.." Has Left The Game",
+                 Text = "🔴 "..Player.Name.." | LV: "..Player.Data.Levels.Value.." Has Left The Game",
                  Icon = "https://www.roblox.com/headshot-thumbnail/image?userId="..Player.UserId.."&width=100&height=100&format=png",
                  Duration = 3
              }) 
 end)
+end
